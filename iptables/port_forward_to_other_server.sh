@@ -10,6 +10,4 @@ iptables -t nat -A PREROUTING -d 192.168.75.5 -p tcp --dport 80 -j DNAT --to-des
 #将192.168.75.3 8000端口将数据返回给客户端时，将源ip改为192.168.75.5
 iptables -t nat -A POSTROUTING -d 192.168.75.3 -p tcp --dport 8000 -j SNAT 192.168.75.5
 
-
-
-
+#Refer http://coolnull.com/3322.html
