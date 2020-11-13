@@ -1,0 +1,3 @@
+test='value'
+
+export test
